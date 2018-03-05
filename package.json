@@ -1,6 +1,6 @@
 {
   "name": "node-iol",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "InvertirOnline Node.JS API wrapper",
   "main": "iol.js",
   "scripts": {
