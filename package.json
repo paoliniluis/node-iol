@@ -1,13 +1,13 @@
 {
-  "name": "iol",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "node-iol",
+  "version": "0.0.1",
+  "description": "InvertirOnline Node.JS API wrapper",
+  "main": "iol.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Luis Paolini (paoliniluis@gmail.com)",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0"
   }

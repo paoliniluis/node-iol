@@ -1,5 +1,5 @@
 node_modules/
-package-lock.json
 token.json
 index.js
 token.1.json
+.eslintrc.json
