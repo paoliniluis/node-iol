@@ -2,7 +2,7 @@
   "name": "node-iol",
   "version": "0.0.2",
   "description": "InvertirOnline Node.JS API wrapper",
-  "main": "iol.js",
+  "main": "node-iol.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
