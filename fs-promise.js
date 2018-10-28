@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const stat = (file) => {
+const stat = file => {
     return new Promise ((resolve, reject) => {
         fs.stat(file, (err, callback) => {
             if (err) reject(err);
@@ -9,7 +9,7 @@ const stat = (file) => {
     })
 }
 
-const exists = (file) => {
+const exists = file => {
     return new Promise ((resolve, reject) => {
         fs.stat(file, (err, callback) => {
             if (err) resolve(false);
@@ -18,7 +18,7 @@ const exists = (file) => {
     })
 }
 
-const unlink = (file) => {
+const unlink = file => {
     return new Promise ((resolve, reject) => {
         fs.unlink(file, (err, callback) => {
             // if (err) reject(err);
@@ -27,7 +27,7 @@ const unlink = (file) => {
     })
 }
 
-const read = (file) => {
+const read = file => {
     return new Promise ((resolve, reject) => {
         fs.readFile(file, 'utf-8', (err, callback) => {
             if (err) reject (err);

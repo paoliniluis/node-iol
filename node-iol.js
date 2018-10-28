@@ -1,11 +1,12 @@
 const axios = require('axios');
 const querystring = require('querystring');
+
 const fsp = require ('./fs-promise');
 const credentials = require ('./auth.json');
 
 let apiUrl = 'https://api.invertironline.com/api';
 
-const getAccountStatus = (token) => {
+const getAccountStatus = token => {
     return axios.get(`${apiUrl}/estadocuenta`, 
     {
         headers: { Authorization: `Bearer ${token.access_token}` }
@@ -13,7 +14,7 @@ const getAccountStatus = (token) => {
     .then(res => res.data)
 }
 
-const getPortfolio = (token) => {
+const getPortfolio = token => {
     return axios.get(`${apiUrl}/portafolio`,
     {
         headers: { Authorization: `Bearer ${token.access_token}` }
@@ -21,7 +22,7 @@ const getPortfolio = (token) => {
     .then(res => res.data)
 }
 
-const getOperations = (token) => {
+const getOperations = token => {
     return axios.get(`${apiUrl}/operaciones`, {
         headers: { Authorization: `Bearer ${token.access_token}` }
     })
@@ -156,7 +157,7 @@ const auth = () => {
     })
 }
 
-const getToken = (refreshToken) => {
+const getToken = refreshToken => {
     let creds = '';
     if (refreshToken) {
         creds = querystring.stringify({ refresh_token: refreshToken, grant_type: 'refresh_token' });

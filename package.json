@@ -1,14 +1,16 @@
 {
   "name": "node-iol",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "InvertirOnline Node.JS API wrapper",
   "main": "node-iol.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Luis Paolini (paoliniluis@gmail.com)",
-  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0"
-  }
+  },
+  "keywords": ["invertironline", "invertir", "argentina", "iol", "investment"],
+  "homepage": "https://github.com/paoliniluis/node-iol",
+  "author": "Luis Paolini (paoliniluis@gmail.com)",
+  "license": "MIT"
 }
