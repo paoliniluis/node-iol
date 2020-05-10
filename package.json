@@ -7,9 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.19.2"
   },
-  "keywords": ["invertironline", "invertir", "argentina", "iol", "investment"],
+  "keywords": [
+    "invertironline",
+    "invertir",
+    "argentina",
+    "iol",
+    "investment"
+  ],
   "homepage": "https://github.com/paoliniluis/node-iol",
   "author": "Luis Paolini (paoliniluis@gmail.com)",
   "license": "MIT"
